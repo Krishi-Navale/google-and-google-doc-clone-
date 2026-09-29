@@ -138,7 +138,7 @@
     "postcss": "^8",
     "prettier": "^3.9.8",
     "prettier-plugin-tailwindcss": "^0.8.1",
-    "tailwindcss": "^3.4.1",
+    "tailwindcss": "^4.3.3",
     "typescript": "^6"
   },
   "packageManager": "pnpm@11.10.0"
