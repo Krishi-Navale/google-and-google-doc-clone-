@@ -21,8 +21,8 @@ importers:
         specifier: ^3.24.2
         version: 3.24.2(@types/json-schema@7.0.15)
       '@liveblocks/react':
-        specifier: ^3.22.0
-        version: 3.22.0(@types/json-schema@7.0.15)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react@19.3.0)
+        specifier: ^3.24.2
+        version: 3.24.2(@types/json-schema@7.0.15)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react@19.3.0)
       '@liveblocks/react-tiptap':
         specifier: ^3.22.0
         version: 3.22.0(@tiptap/core@3.27.3(@tiptap/pm@3.27.3))(@tiptap/pm@3.27.3)(@tiptap/react@3.27.3(@floating-ui/dom@1.8.0)(@tiptap/core@3.27.3(@tiptap/pm@3.27.3))(@tiptap/pm@3.27.3)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(@tiptap/suggestion@3.27.3(@floating-ui/dom@1.8.0)(@tiptap/core@3.27.3(@tiptap/pm@3.27.3))(@tiptap/pm@3.27.3))(@types/json-schema@7.0.15)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(prosemirror-model@1.25.10)(prosemirror-state@1.4.4)(prosemirror-view@1.42.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(y-protocols@1.0.7(yjs@13.6.31))(yjs@13.6.31)
@@ -741,6 +741,9 @@ packages:
   '@liveblocks/client@3.22.0':
     resolution: {integrity: sha512-kKUMQjvyESFiut0DoKKu/IdfXoDIP7IfxkMcCBuJ46tIi0Li6qFLPPVmWgUbLHkGANK+KjMhDN1U74bty4t34w==}
 
+  '@liveblocks/client@3.24.2':
+    resolution: {integrity: sha512-sTwdfToT6e1t4x2pv02nZuvKHoTU4L4hwOSyxVPE8i9D1gsk89uW2Rpp8mPcKuBSOroZgiEiSCl2s0AQVaPwSQ==}
+
   '@liveblocks/core@3.22.0':
     resolution: {integrity: sha512-w0bE14c67UfP+fR0waQB+Kxol3A+fbMsU/cceaAGVr/LiRIYi/wE76UbF+4716Hnglc+VhOBhyzAr9cFsgTlNA==}
     peerDependencies:
@@ -787,6 +790,18 @@ packages:
 
   '@liveblocks/react@3.22.0':
     resolution: {integrity: sha512-ZUqtS66CSrSIofe8wlPITF1D7lVHEfnQTP1vFROhvSTi6ioF59O5TCVaMZ+hPVN1VD0gcG1kNASVwMp0LevCQg==}
+    peerDependencies:
+      '@types/react': ^18 || ^19
+      '@types/react-dom': ^18 || ^19
+      react: ^18 || ^19 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+
+  '@liveblocks/react@3.24.2':
+    resolution: {integrity: sha512-zibtnsvlzZ47E5Xeky7VrGgcHDRBjVxSMeiQMwhQUaB+5JRpTN7Q4iOdH4iZBLIsIWhvPQBQmsFLGPTQ214GgQ==}
     peerDependencies:
       '@types/react': ^18 || ^19
       '@types/react-dom': ^18 || ^19
@@ -4624,6 +4639,12 @@ snapshots:
     transitivePeerDependencies:
       - '@types/json-schema'
 
+  '@liveblocks/client@3.24.2(@types/json-schema@7.0.15)':
+    dependencies:
+      '@liveblocks/core': 3.24.2(@types/json-schema@7.0.15)
+    transitivePeerDependencies:
+      - '@types/json-schema'
+
   '@liveblocks/core@3.22.0(@types/json-schema@7.0.15)':
     dependencies:
       '@types/json-schema': 7.0.15
@@ -4696,6 +4717,17 @@ snapshots:
     dependencies:
       '@liveblocks/client': 3.22.0(@types/json-schema@7.0.15)
       '@liveblocks/core': 3.22.0(@types/json-schema@7.0.15)
+      react: 19.3.0
+    optionalDependencies:
+      '@types/react': 19.3.0
+      '@types/react-dom': 19.3.0(@types/react@19.3.0)
+    transitivePeerDependencies:
+      - '@types/json-schema'
+
+  '@liveblocks/react@3.24.2(@types/json-schema@7.0.15)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react@19.3.0)':
+    dependencies:
+      '@liveblocks/client': 3.24.2(@types/json-schema@7.0.15)
+      '@liveblocks/core': 3.24.2(@types/json-schema@7.0.15)
       react: 19.3.0
     optionalDependencies:
       '@types/react': 19.3.0
