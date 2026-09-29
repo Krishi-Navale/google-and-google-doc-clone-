@@ -83,7 +83,7 @@
     "@floating-ui/dom": "^1.8.0",
     "@liveblocks/client": "^3.22.0",
     "@liveblocks/node": "^3.24.2",
-    "@liveblocks/react": "^3.22.0",
+    "@liveblocks/react": "^3.24.2",
     "@liveblocks/react-tiptap": "^3.22.0",
     "@liveblocks/react-ui": "^3.22.0",
     "@radix-ui/react-alert-dialog": "^1.1.23",
